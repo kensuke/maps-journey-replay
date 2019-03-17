@@ -237,6 +237,10 @@ var journeyReplay = function(optionsObj) {
         _loadJourney();
     };
 
+    this.replay = function() {
+        startJourney();
+    };
+
     this.marker = {
         onFrame: function (callback) {
             optionsObj.marker.onFrame = callback;
